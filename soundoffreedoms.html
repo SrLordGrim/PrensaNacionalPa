@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="image" property="og:image" content="assets/logoPanTim">
+  <link rel="shortcut icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Sound of Freedom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ol class="navbar">
+        <li class="navcenter"><a href="index.html"><img src="assets/logoPanTim.png" alt="logo"></a></li>
+
+        <li class="navright">
+          <button class="navbtn subbtn" type="submit" name="subscribe">Subscribete</button>
+          <a href="#"></a></li> 
+          
+    <!--menu button-->
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+
+  <div class="side-bar">
+    <!--header section-->
+    <header>
+      <!--close button-->
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+  </header>
+
+      <!--menu item-->
+      <div class="menu">
+        <div class="item"><a class="sub-btn"><i class="fas fa-table"></i>Tables
+       <!--dropdown--> 
+       <!--dropdown arrow-->
+       <i class="fas fa-angle-right dropdown"></i> 
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">1</a>
+          <a href="" class="sub-item">2</a>
+          <a href="" class="sub-item">3</a>
+        </div>
+       </div>
+
+        <div class="item"><a href=""><i class="fas fa-th"></i>Forms</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa-cog"></i>Settings
+      <!--dropdown--> 
+      <!--dropdown arrow-->
+       <i class="fas fa-angle-right dropdown"></i> 
+       </a>
+       <div class="sub-menu">
+        <a href="" class="sub-item">1</a>
+        <a href="" class="sub-item">2</a>
+        <a href="" class="sub-item">3</a>
+       </div>
+      </div>
+  </div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+    
+        //for close button
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+    
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
+    </script>
+      </ol>
+    </nav>
+  </header>
+
+  <main> 
+    <!-- MAIN CONTENT -->
+
+  <div class="container">
+
+    <div class="article">
+
+      <h1>Sound of Freedom: Desde una Perspectiva Legal</h1>
+      <img class="mainimg" src="assets/soundoffreedom.jpg" alt="mainimg">
+      <p class="piccapt">Sound of Freedom, una película de Alejandro Gómez Monteverde, que busca sensibilizar a las personas sobre de trata de persona. Se estrena el 31 de agosto de 2023 en las salas de cine de Panamá.
+        <span>Para Panama Times</span>
+      </p>
+      <br>
+
+      <div class="maintext">
+      
+        <h5><a id="authorname" href="#">Por Kevin Zhu</a></h5>
+      
+        <div class="articlelist1">
+          <p><a class="artdate" href="#"></a>Agosto 12, 2023<a href="#"></a></p>
+
+            <ul>
+              <li class="listicon"><a href="https://www.instagram.com/kejozhla3/">
+                <i class="fa-brands fa-instagram" alt="instagram"></i>
+              </a></li>
+
+            </ul>
+        </div>
+
+        <!-- MAIN ARTICLE TEXT-->
+
+          <div>
+            <p>
+        Ciudad de Panamá, Panamá. — La película trata sobre los delitos de trata de personas, tráfico de órganos e incluso la pedofilia. Ahorita mismo, todo el mundo habla de eso, pero no conoce cómo funcionan estos 3 delitos.
+
+            </p>
+            <p>
+              En Panamá, la trata de personas está tipificada en el Código Penal, específicamente en el Título XV, Capítulo IV, que trata los "Delitos Contra La Trata de Personas.
+            </p>
+            <p>
+              El tráfico de órganos está tipificado en la ley 79 de 9 de noviembre de 2011, capítulo IV, término 5 que comprende "Extracción Ilícita de Órganos", que trata "Sobre trata de personas y actividades conexas".
+            </p>
+            <p>
+              En Panamá, la pedofilia no es considerada como un delito en sí misma, sino como un trastorno psicológico. Se consideran delitos relacionados con la pedofilia aquellos actos que involucren abuso sexual, explotación, producción, posesión o distribución de material pornográfico infantil, o cualquier otro tipo de conducta que cause daño a menores. Estas acciones constituyen delitos graves y son perseguidos por la ley.
+            </p>
+            <p>
+              Escucho a las personas decir "los niños de Dios no se tocan, hay que protegerlos", pero los niños de Dios son todos. Tú, yo, los adultos, jóvenes y niños.
+            </p>
+            <p>
+              Al final del día, muchas voces han lanzado por esta película, pero los niños de Panamá desaparecen todos los meses.
+            </p>
+          </div>
+
+    <div class="maintext2">
+    <!-- BACK TO ARTICLE TEXT-->
+      <p>
+        Es importante contribuir a mejorar el sistema que lucha contra la Trata de Persona, que muchas veces, vienen a raíz de las desapariciones, no solo en niños, también de mujeres y de hombres, que vuelvo y repito, mensualmente desaparecen.
+      </p>
+      <p>
+        Salen de su casa en su trabajo, no llegan a su trabajo, no llegan a sus casas, nadie sabe dónde están, pasa el tiempo, fiscalía investiga, no los ubica, cierran las carpetas, los archivan, y esas personas quedan desaparecidas por años sin saber su paradero, si fueron sacados del país, si fueron asesinados y tirados en cualquier lugar.
+      </p>
+      <p>
+        Es bueno que den voz y visibilizar la película, pero más allá de eso, también se preocupen por los niños desaparecidos de Panamá.
+      </p>
+      <p>
+        Por los delitos de trata de persona, tráfico de órganos y pedofilia que hay en Panamá, se preocupen por cuidar a sus hijos, hermanos, sobrinos o nietos.
+      </p>
+      <p>
+        Por no permitirles tener ese acceso en redes sociales a aplicaciones que ustedes ni siquiera saben con quién hablan.
+      </p>
+      <p>
+        Que los cuiden de no estar subiendo videos y fotos, exponiéndolos en ropa que ni siquiera es para su edad y/o bailando de una forma que ni siquiera es propia de su edad.
+      </p>
+      <p>
+        Por lo regular, siempre se habla del delito, pero ¿hablamos de la condena?
+      </p>
+      <p>
+        Siempre repudiamos al pedófilo; a la persona que tiene trastornos, que necesita terapia conductual, que es cierto, merece una condena ejemplar y también una condena social por las conductas que tiene por los delitos que cometen.
+      </p>
+      <p>Pero también los tutores legales, los padres, son muy responsables de muchas veces de esos desenlaces.
+      </p>
+      <p>
+        Dejan a sus hijos con cualquiera. Los mandan al colegio con cualquiera y hasta solos. Sobre todo, en las comunidades.
+      </p>
+      <p>
+        Confiamos en nuestra propia sangre, que no es que estén mal, pero hay que desconfiar a todo el mundo, porque muchas veces, nuestra propia sangre es la que les hace daño a los niños.
+      </p>
+      <p>
+        Me ha tocado ver casos de menores de edad que tienen acceso al celular con 5, 6 o 7 años, y los padres dicen que los supervisan, pero muchas veces no están ahí, a veces se distraen en su propio celular con clientes, con la televisión, con los quehaceres. Ese momento puede ser crucial.
+      </p>
+      <p>También me ha tocado ver menores de edad, muy pequeños que manejan dinero en efectivo que les dan sus padres, que están divorciados o separados.
+      </p>
+      <p>
+        Que tienen tarjeta de crédito, que no los manejan sus madres, sus padres, sino que ellos mismos. Eso no debe estar ocurriendo, para mí es inaceptable.
+      </p>
+      <p>
+        Asimismo, pues me ha tocado también ver personas que no previenen el delito. Se exponen demasiado en redes sociales y físicamente.
+      </p>
+      <p>
+        La trata de personas y el tráfico de órganos de la pedofilia son 3 delitos distintos que muchas veces están conectados en la gran mayoría de las veces casi siempre, pero no puedo generalizar, no es sano, no es bueno.
+      </p>
+      <p>Pero siempre se encuentran y se reúnen, existen en Panamá y eso es lo que usted tiene que recordar.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <p class="lastp">
+      Una versión de este artículo aparece impresa el xx/xx/xx, Sección X,
+      Página X de la edición de Panama Times con el titular: Sound of Freedom: Desde una Perspectiva Legal
+      <a href="#">Periódico de Hoy</a> | <a href="#">Subscribe</a>
+    </p>
+
+  </main>
+  
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="linkssection">
+
+      <hr>
+
+        <div class="footertop">
+
+          <a href="index.html" rel="noopener noreferrer" target="_blank"><img class="logofotimg" src="assets/logoPanTim.png" alt="logo"></a>
+          <a href="index.html" class="gohome" rel="noopener noreferrer" target="_blank">Ir a la Portada</a>
+
+        </div>
+
+        <div class="linkscolumns">
+          
+          <nav class="column">
+            <h3 class="titlelink link">Noticias</h3>
+            <a href="#" class="link">Portada</a>
+            <a href="#" class="link">Mundo</a>
+            <a href="#" class="link">Panamá</a>
+            <a href="#" class="link">Política</a>
+            <a href="#" class="link">Elección 2024</a>
+            <a href="#" class="link">Ciudad de Panamá</a>
+            <a href="#" class="link">Negocio</a>
+            <a href="#" class="link">Tecnología</a>
+            <a href="#" class="link">Ciencia</a>
+            <a href="#" class="link">Deporte</a>
+            <a href="#" class="link">Obituarios</a>
+            <a href="#" class="link">Correcciones</a>
+
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Opinión</h3>
+            <a href="#" class="link">Opinión de Hoy</a>
+            <a href="#" class="link">Columnistas</a>
+            <a href="#" class="link">Editoriales</a>
+            <a href="#" class="link">Resumen de Domingo</a>
+            <a href="#" class="link">Video: Opinión</a>
+  
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Arte</h3>
+            <a href="#" class="link">Arte de Hoy</a>
+            <a href="#" class="link">Arte y Diseño</a>
+            <a href="#" class="link">Libros</a>
+            <a href="#" class="link">Danza</a>
+            <a href="#" class="link">Películas</a>
+            <a href="#" class="link">Música</a>
+            <a href="#" class="link">Cultura Pop</a>
+            <a href="#" class="link">Televisión</a>
+            <a href="#" class="link">Teatro</a>
+            <a href="#" class="link">Video: Arte</a>
+  
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Día a Día</h3>
+            <a href="#" class="link">En Casa</a>
+            <a href="#" class="link">Automóviles</a>
+            <a href="#" class="link">Juegos</a>
+            <a href="#" class="link">Educación</a>
+            <a href="#" class="link">Comida</a>
+            <a href="#" class="link">Salud</a>
+            <a href="#" class="link">Trabajo</a>
+            <a href="#" class="link">Recetas</a>
+            <a href="#" class="link">Viajes</a>
+  
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Más</h3>
+            <a href="#" class="link">Centro de Lectura</a>
+            <a href="#" class="link">Eventos en Vivo</a>
+            <a href="#" class="link">Herramientas y Servicios</a>
+            <a href="#" class="link">Multimedia</a>
+            <a href="#" class="link">Fotografía</a>
+            <a href="#" class="link">Video</a>
+            <a href="#" class="link">Newsletters</a>
+            <a href="#" class="link">Mi Cuenta</a>
+  
+          </nav>
+  
+          <nav class="column bordercol">
+  
+            <h3 class="titlelink link">SUBSCRIBE</h3>
+            <a href="#" class="link2"><img src="assets/footer2.png" alt="digital imag">Subscripción Digital</a>
+
+            <hr>
+            
+            <a href="#" class="link">English</a>
+            <a href="#" class="link">中文网</a>
+          
+          </nav>
+  
+        </div>
+  
+    </div>
+    
+    <div class="footerlinks">
+      <a href="#">© 2023 Panama Times</a>
+      <a href="#">Contáctanos</a>
+      <a href="#">Colabora con Nosotros</a>
+      <a href="#">Anuncios</a>
+      <a href="#">Términos de Servicio de Privacidad</a>
+      <a href="#">Ayuda</a>
+    </div>
+
+    <div class="footernavbar">
+
+      <ul>
+      <li class="access">
+        <p>Acceda a más de Panama Times creando una cuenta gratuita o iniciando sesión.</p>
+      </li>
+      </ul>
+
+    </div>
+      
+  </footer>
+
+</body>
+</html>
