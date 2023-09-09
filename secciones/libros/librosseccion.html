@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="image" property="og:image" content="/assets/logoPanTim">
+  <link rel="shortcut icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js"></script>
+  <title>Sección-Libros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ol class="navbar">
+        <li class="navcenter"><a href="/index.html"><img src="/assets/logoPanTim.png" alt="logo"></a></li>
+
+        <li class="navright">
+          <button class="navbtn subbtn" type="submit" name="subscribe">Subscribete</button>
+          <a href="#"></a></li> 
+          
+    <!--menu button-->
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+
+  <div class="side-bar">
+    <!--header section-->
+    <header>
+      <!--close button-->
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+  </header>
+
+      <!--menu item-->
+      <div class="menu">
+        <div class="item"><a class="sub-btn"><i class="fas fa-table"></i>Tables
+       <!--dropdown--> 
+       <!--dropdown arrow-->
+       <i class="fas fa-angle-right dropdown"></i> 
+        </a>
+        <div class="sub-menu">
+          <a href="" class="sub-item">1</a>
+          <a href="" class="sub-item">2</a>
+          <a href="" class="sub-item">3</a>
+        </div>
+       </div>
+
+        <div class="item"><a href=""><i class="fas fa-th"></i>Forms</a></div>
+        <div class="item"><a class="sub-btn"><i class="fas fa-cog"></i>Settings
+      <!--dropdown--> 
+      <!--dropdown arrow-->
+       <i class="fas fa-angle-right dropdown"></i> 
+       </a>
+       <div class="sub-menu">
+        <a href="" class="sub-item">1</a>
+        <a href="" class="sub-item">2</a>
+        <a href="" class="sub-item">3</a>
+       </div>
+      </div>
+  </div>
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        //jquery for expand and collapse the sidebar
+        $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+        });
+    
+        //for close button
+        $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+        });
+    
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function(){
+          $(this).next('.sub-menu').slideToggle();
+          $(this).find('.dropdown').toggleClass('rotate');
+        });
+      });
+    </script>
+      </ol>
+    </nav>
+  </header>
+
+  <main> <!-- MAIN CONTENT -->
+    <div class="container">
+    <div class="article">
+
+      <h1>Libros</h1>
+    </div>
+  </div>
+
+      <div class="flexcontainer">
+  
+          <div class="leftside">
+    
+              <div class="suggested-articles">
+
+                  <div class="other3">
+   
+                    <div class="content">
+                      <a href="latinoamerica.html">
+                        <img src="/assets/pobrezalatam.png" class="leftimg" alt="edimage">
+                        <h3>Latinoamérica fue muy rica para prosperar y es condenado por ella</h3>
+                      </a>
+                      
+                    </div>
+                 </div>
+              </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="linkssection">
+
+      <hr>
+
+        <div class="footertop">
+
+          <a href="/index.html" rel="noopener noreferrer" target="_blank"><img class="logofotimg" src="/assets/logoPanTim.png" alt="logo"></a>
+
+        </div>
+
+        <div class="linkscolumns">
+          
+          <nav class="column">
+  
+            <h3 class="titlelink link">Noticias</h3>
+            <a href="/secciones/mundo/mundoseccion.html" class="link">Mundo</a>
+            <a href="/secciones/panama/panamaseccion.html" class="link">Panamá</a>
+            <a href="/secciones/politica/politicaseccion.html" class="link">Política</a>
+            <a href="/secciones/negocio/negocioseccion.html" class="link">Negocio</a>
+            <a href="/secciones/tecnologia/tecnologiaseccion.html" class="link">Tecnología</a>
+            <a href="/secciones/deporte/deporteseccion.html" class="link">Deporte</a>
+            <a href="/secciones/economia/economiaseccion.html" class="link">Economía</a>
+            <a href="/secciones/correciones/correcionesseccion.html" class="link">Correcciones</a>
+
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Opinión</h3>
+            <a href="/secciones/columnistas/columnistasseccion.html" class="link">Columnistas</a>
+            <a href="/secciones/opinion/opinionseccion.html" class="link">Artículo de Opinión</a>
+  
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Arte</h3>
+            <a href="/secciones/arteydiseno/arteydisenoseccion.html" class="link">Arte y Diseño</a>
+            <a href="/secciones/cuentospoesias/cuentospoesiasseccion.html" class="link">Cuentos y Poesías</a>
+            <a href="/secciones/libros/librosseccion.html" class="link">Libros</a>
+            <a href="/secciones/peliculas/peliculasseccion.html" class="link">Películas</a>
+            <a href="/secciones/musica/musicaseccion.html" class="link">Música</a>
+            <a href="/secciones/culturapop/culturapopseccion.html" class="link">Cultura</a>
+            <a href="/secciones/teatro/teatroseccion.html" class="link">Teatro</a>
+            <a href="/secciones/fotografia/fotografiaseccion.html" class="link">Fotografía</a>
+            <a href="/secciones/video/videoseccion.html" class="link">Video</a>  
+          </nav>
+  
+          <nav class="column">
+  
+            <h3 class="titlelink link">Día a Día</h3>
+            <a href="/secciones/automoviles/automovilesseccion.html" class="link">Automóviles</a>
+            <a href="/secciones/juegos/juegosseccion.html" class="link">Juegos</a>
+            <a href="/secciones/educacion/educacionseccion.html" class="link">Educación</a>
+            <a href="/secciones/comida/comidaseccion.html" class="link">Comida</a>
+            <a href="/secciones/salud/saludseccion.html" class="link">Salud</a>
+            <a href="/secciones/recetas/recetasseccion.html" class="link">Recetas</a>
+            <a href="/secciones/viajes/viajesseccion.html" class="link">Viajes</a>
+  
+          </nav>
+  
+          <nav class="column bordercol">
+  
+            <h3 class="titlelink link">Donaciones</h3>
+            <a href="/donaciones.html" class="link2"><img src="/assets/footer2.png" alt="digital imag">¡Apoya al Periodismo Independiente!</a>
+
+            <hr>
+            
+            <a href="#" class="link">English</a>
+            <a href="#" class="link">中文网</a>
+          
+          </nav>
+  
+        </div>
+  
+    </div>
+    
+    <div class="footerlinks">
+      <a href="/index.html">© 2023 Panama Times</a>
+      <a href="/contacto.html">Contáctanos</a>
+    </div>
+      
+  </footer>
+
+</body>
+</html>
