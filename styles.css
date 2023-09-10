@@ -323,19 +323,18 @@ iframe {
 }
 
 /* Agrega estas reglas CSS para mostrar los artículos en una disposición horizontal */
-.flexcontainer article-section {
+.flexcontainer .article-section {
   display: flex;
   flex-wrap: nowrap; /* Evita que los artículos se envuelvan a la siguiente línea */
   overflow-x: auto; /* Agrega un desplazamiento horizontal si hay demasiados artículos para caber en la pantalla */
   padding: 20px; /* Añade un espacio alrededor de los artículos */
 }
 
-.flexcontainer article-section content {
+.flexcontainer .article-section .content {
   flex: 0 0 auto; /* Evita que los artículos se estiren para llenar el espacio disponible */
   margin-right: 20px; /* Espacio entre los artículos */
   width: 300px; /* Ancho de cada artículo, ajusta según sea necesario */
 }
-
 
 .flexcontainer h4 {
   padding-top: 10px;
