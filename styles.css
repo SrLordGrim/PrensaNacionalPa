@@ -311,6 +311,7 @@ iframe {
 
 .flexcontainer {
   display: flex;
+  flex-wrap: wrap; /* Permite que los artículos se envuelvan a la siguiente fila */
   font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
   font-weight: 500;
   font-size: 18px;
@@ -320,6 +321,12 @@ iframe {
   width: 100%;
   max-width: 1200px;
   justify-content: space-between;
+}
+
+.flexcontainer .content {
+  flex: 0 0 calc(33.333% - 20px); /* 33.333% para que haya tres artículos por fila */
+  margin: 0 15px 10px 0; /* Espacio entre los artículos */
+  height: 310px;
 }
 
 .flexcontainer h4 {
@@ -361,13 +368,6 @@ iframe {
   text-align: left;
   margin-top: -10px;
   font-size: 12px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 15px 10px 0;
-  height: 310px;
 }
 
 .leftside h3 {
