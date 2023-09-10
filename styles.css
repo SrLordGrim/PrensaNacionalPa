@@ -311,7 +311,6 @@ iframe {
 
 .flexcontainer {
   display: flex;
-  flex-wrap: wrap; /* Permite que los artículos se envuelvan a la siguiente fila */
   font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
   font-weight: 500;
   font-size: 18px;
@@ -323,9 +322,11 @@ iframe {
   justify-content: space-between;
 }
 
-.flexcontainer .content {
+.content {
+  display: flex;
+  flex-direction: row;
   flex: 0 0 calc(33.333% - 20px); /* 33.333% para que haya tres artículos por fila */
-  margin: 0 15px 10px 0; /* Espacio entre los artículos */
+  margin: 0 15px 10px 0;
   height: 310px;
 }
 
