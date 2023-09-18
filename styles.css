@@ -324,7 +324,7 @@ iframe {
 
 .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 0 0 calc(33.333% - 20px); /* 33.333% para que haya tres artículos por fila */
   margin: 0 15px 10px 0;
   height: 310px;
