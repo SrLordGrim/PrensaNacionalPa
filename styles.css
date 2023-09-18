@@ -142,6 +142,7 @@ ol .navright {
   font-size: 13px;
   line-height: 16px;
   font-weight: 500;
+  align-items: left;
 }
 
 .articlelist1 ul {
