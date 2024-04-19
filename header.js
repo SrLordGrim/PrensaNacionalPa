@@ -8,6 +8,7 @@ $(document).ready(function(){
   // jQuery para el botón de cerrar
   $('.close-btn').click(function(){
     $('.side-bar').removeClass('active');
+    // Restaurar la visibilidad del botón de menú
     $('.menu-btn').css("visibility", "visible");
   });
 
