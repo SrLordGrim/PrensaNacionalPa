@@ -13,7 +13,14 @@
 <body>
   <!-- Importar el header desde header.html -->
   <div id="header-container"></div>
-    
+  <!-- HEADER IMPORT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(function(){
+      $("#header-container").load("/header.html"); 
+  });
+</script>
+  
   <main> <!-- MAIN CONTENT -->
 
     <div class="container">
@@ -33,13 +40,7 @@
     </main>
 
 
-<!-- HEADER IMPORT -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  $(function(){
-      $("#header-container").load("/header.html"); 
-  });
-</script>
+
 
         
 <!-- FOOTER IMPORT -->
