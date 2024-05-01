@@ -9,48 +9,48 @@
   <script src="script.js"></script>
   <title>Contacto</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
   <!-- Importar el header desde header.html -->
   <div id="header-container"></div>
-  <!-- HEADER IMPORT -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script>
-  $(function(){
-      $("#header-container").load("/header.html"); 
-  });
-</script>
-    </header>
-  
+    
   <main> <!-- MAIN CONTENT -->
-
     <div class="container">
-  
       <div class="article">
-  
         <h1>Contacto</h1>
-          <br>
-  
-          <div class="maintext">
-            <!-- MAIN ARTICLE TEXT-->
-              <div>
-                <p>Agradecemos sus aportes, comentarios y sugerencias. Para ello nos puede contactar a través de kzhul@panamatimes.online</p>
-                <p>©2024 Panama Times. Todos los Derechos Reservados</p>
-              </div>
+        <br>
+        <div class="maintext">
+          <!-- MAIN ARTICLE TEXT-->
+          <div>
+            <p>Agradecemos sus aportes, comentarios y sugerencias. Para ello nos puede contactar a través de kzhul@panamatimes.online</p>
+            <p>©2024 Panama Times. Todos los Derechos Reservados</p>
+          </div>
+        </div>
+      </div>
     </div>
-    </main>
-  
+  </main>
+
+<!-- Importar jQuery desde CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<!-- Importar el script del header desde header.js -->
+<script src="header.js"></script>
+
 <!-- FOOTER IMPORT -->
 <footer>
     <div id="footer"></div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $(function(){
-      $("#footer").load("/footer.html"); 
+  $(document).ready(function(){
+    // Cargar el contenido del archivo header.html en el contenedor #header-container
+    $("#header-container").load("header.html");
   });
 </script>
-        
+<script>
+  $(function(){
+    $("#footer").load("/footer.html"); 
+  });
+</script>
 </body>
 </html>
