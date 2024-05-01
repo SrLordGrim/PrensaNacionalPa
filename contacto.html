@@ -15,7 +15,12 @@
 <body>
   <!-- Importar el header desde header.html -->
   <div id="header-container"></div>
-
+  <script>
+  $(document).ready(function(){
+    // Cargar el contenido del archivo header.html en el contenedor #header-container
+    $("#header-container").load("header.html");
+  });
+  </script>
 
   <main> <!-- MAIN CONTENT -->
     <div class="container">
@@ -39,12 +44,6 @@
 <footer>
     <div id="footer"></div>
 </footer>
-<script>
-  $(document).ready(function(){
-    // Cargar el contenido del archivo header.html en el contenedor #header-container
-    $("#header-container").load("header.html");
-  });
-</script>
 <script>
   $(function(){
     $("#footer").load("/footer.html"); 
