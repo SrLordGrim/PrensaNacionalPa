@@ -536,7 +536,7 @@ iframe {
 }
 
 .side-bar{
-  background: black;
+  background: white;
   width: 250px;
   left: -250px;
   height: 100vh;
