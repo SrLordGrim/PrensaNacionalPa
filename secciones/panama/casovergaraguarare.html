@@ -9,61 +9,18 @@
   <script src="script.js"></script>
   <title>Caso Ulpiano Vergara en Guararé: ¿Qué Artículos del Código Penal puede haber violado el alcalde Bustamante?</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ol class="navbar">
-        <li class="navcenter"><a href="/index.html"><img src="/assets/logoPanTim.png" alt="logo"></a></li>
-        <li class="navright">
-          <button class="navbtn subbtn" type="submit" name="subscribe">Suscríbete</button>
-          <a href="#"></a></li> 
-          
-    <!--menu button-->
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div class="side-bar">
-      <!--header section-->
-      <header>
-        <!--close button-->
-        <div class="close-btn">
-          <i class="fas fa-times"></i>
-        </div>
-    </header>
-        <!--menu item-->
-        <div class="menu">
-          <div class="item"><a href="/personal/periodistas.html"><i class="fas fa-th"></i>Nuestros Periodistas</a></div>
-          <div class="item"><a href="/centrodearchivos.html"><i class="fas fa-th"></i>Centro de Archivos</a></div>
-          <div class="item"><a href="/contacto.html"><i class="fas fa-th"></i>Contacto</a></div>
-    </div>
-
-    <!--jquery cdn link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        //jquery for expand and collapse the sidebar
-        $('.menu-btn').click(function(){
-          $('.side-bar').addClass('active');
-          $('.menu-btn').css("visibility", "hidden");
-        });
-    
-        //for close button
-        $('.close-btn').click(function(){
-          $('.side-bar').removeClass('active');
-          $('.menu-btn').css("visibility", "visible");
-        });
-    
-        //jquery for toggle sub menus
-        $('.sub-btn').click(function(){
-          $(this).next('.sub-menu').slideToggle();
-          $(this).find('.dropdown').toggleClass('rotate');
-        });
-      });
-    </script>
-      </ol>
-    </nav>
-  </header>
+  <!-- Importar el header desde header.html -->
+  <div id="header-container"></div>
+  <script>
+  $(document).ready(function(){
+    // Cargar el contenido del archivo header.html en el contenedor #header-container
+    $("#header-container").load("header.html");
+  });
+  </script>
 
   <main> 
     <!-- MAIN CONTENT -->
