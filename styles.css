@@ -638,8 +638,17 @@ iframe {
     font-size: 16px; /* Reduce el tamaño de la fuente para mejorar la legibilidad en pantallas pequeñas */
   }
 
-  /* Agrega reglas de estilo adicionales según sea necesario */
-}
+  .imgfiles {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho disponible */
+    height: auto; /* Mantiene la proporción de aspecto original de la imagen */
+    max-width: 100%; /* Evita que la imagen se extienda más allá de su tamaño original */
+  }
+
+  .vidfiles {
+    width: 100%; /* Hace que el iframe ocupe el 100% del ancho disponible */
+    height: auto; /* Mantiene la proporción de aspecto original del video */
+  }
+
 
 /* Estilos para tablets */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
