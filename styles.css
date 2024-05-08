@@ -616,3 +616,37 @@ iframe {
 .rotate{
   transform: rotate(90deg);
 }
+
+/* Estilos para pantallas más pequeñas, como smartphones */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%; /* Cambia el ancho del contenedor para que ocupe todo el ancho disponible */
+    margin: 60px 0; /* Añade un margen superior e inferior para separarlo de la barra de navegación y el pie de página */
+  }
+
+  .navbar {
+    height: 60px; /* Ajusta la altura de la barra de navegación para que sea más grande en pantallas pequeñas */
+  }
+
+  .navcenter img {
+    width: 100%; /* Ajusta el ancho del logotipo de la barra de navegación para que se ajuste al ancho de la pantalla */
+    max-width: none; /* Elimina el ancho máximo para que el logotipo pueda crecer según el tamaño de la pantalla */
+  }
+
+  .maintext {
+    margin: 0 20px; /* Reduzca los márgenes laterales del texto principal para que se ajuste mejor en pantallas pequeñas */
+    font-size: 16px; /* Reduce el tamaño de la fuente para mejorar la legibilidad en pantallas pequeñas */
+  }
+
+  /* Agrega reglas de estilo adicionales según sea necesario */
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Agrega estilos específicos para tablets si es necesario */
+}
+
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+@media screen and (min-width: 1025px) {
+  /* Agrega estilos específicos para pantallas más grandes si es necesario */
+}
