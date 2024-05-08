@@ -618,7 +618,7 @@ iframe {
 }
 
 /* Estilos para pantallas más pequeñas, como smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 100%) {
   .container {
     width: 100%; /* Cambia el ancho del contenedor para que ocupe todo el ancho disponible */
     margin: 60px 0; /* Añade un margen superior e inferior para separarlo de la barra de navegación y el pie de página */
@@ -648,14 +648,3 @@ iframe {
     width: 100%; /* Hace que el iframe ocupe el 100% del ancho disponible */
     height: auto; /* Mantiene la proporción de aspecto original del video */
   }
-
-
-/* Estilos para tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Agrega estilos específicos para tablets si es necesario */
-}
-
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
-@media screen and (min-width: 1025px) {
-  /* Agrega estilos específicos para pantallas más grandes si es necesario */
-}
