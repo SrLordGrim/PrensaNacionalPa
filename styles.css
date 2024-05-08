@@ -618,7 +618,7 @@ iframe {
 }
 
 /* Estilos para pantallas más pequeñas, como smartphones */
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%; /* Cambia el ancho del contenedor para que ocupe todo el ancho disponible */
     margin: 60px 0; /* Añade un margen superior e inferior para separarlo de la barra de navegación y el pie de página */
