@@ -625,7 +625,7 @@ iframe {
   }
 
   .navbar {
-    height: 60px; /* Ajusta la altura de la barra de navegación para que sea más grande en pantallas pequeñas */
+    height: 40px; /* Ajusta la altura de la barra de navegación para que sea más grande en pantallas pequeñas */
   }
 
   .navcenter img {
