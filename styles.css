@@ -629,6 +629,10 @@ iframe {
     font-size: 14px;
   }
 
+  body, .container {
+    overflow-x: hidden; /* Ocultar el desplazamiento horizontal */
+  }
+
   /* Barra de navegación */
   .navbar {
     height: auto;
