@@ -636,7 +636,7 @@ iframe {
   /* Barra de navegación */
   .navbar {
     height: auto;
-    position: static;
+    position: left;
     flex-direction: column;
   }
 
