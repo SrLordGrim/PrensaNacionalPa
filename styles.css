@@ -637,8 +637,9 @@ iframe {
   }
 
   .navcenter img {
-    width: 100%;
+    width: 50%;
     max-width: none;
+    margin: 0 auto; /* Centrar el logo */
   }
 
   .navicons img {
@@ -646,6 +647,11 @@ iframe {
     height: 25px;
   }
 
+  .navleft,
+  .navright {
+    flex: 1; /* Hacer que los elementos ocupen el mismo espacio */
+  }
+  
   .navbtn {
     width: 100%;
     margin-top: 10px;
