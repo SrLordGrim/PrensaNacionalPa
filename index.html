@@ -7,13 +7,14 @@
   <!-- jQuery CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <script>
-        $(function(){
-            $.get("/head.html", function(data){
-                $("head").append(data);
-            });
-        });
-    </script>
+  <!-- Importar el head desde head.html -->
+  <div id="head"></div>
+  <script>
+  $(document).ready(function(){
+    // Cargar el contenido del archivo header.html en el contenedor #head
+    $("#head").load("/head.html");
+  });
+  </script>
   
 </head>
 <body>
