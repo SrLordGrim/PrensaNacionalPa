@@ -11,6 +11,15 @@
 <script src="/script.js"></script>
 <title>Prensa Nacional</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+      <script>
+        $(function(){
+            $.get("/head.html", function(data){
+                $("head").append(data);
+            });
+        });
+    </script>
+  
 </head>
 <body>
   <!-- Importar el header desde header.html -->
