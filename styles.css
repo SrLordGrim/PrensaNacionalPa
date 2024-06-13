@@ -382,7 +382,7 @@ iframe {
   width: 250px;
 }
 
-.rightside a {
+.rightside p {
   border-top: 1px solid #e2e2e2;
 }
 
@@ -420,7 +420,7 @@ iframe {
 
 .rightside {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 315px;
 }
 
