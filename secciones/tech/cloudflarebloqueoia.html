@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <meta name="image" property="og:image" content="/assets/logoPanTim">
+    <link rel="shortcut icon" href="/assets/faviconPN.png">
+    <script src="/script.js"></script>
+    <title>Prensa Nacional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7WTJ624XG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N7WTJ624XG');
+</script>
+</head>
+  
+<body>
+  <!-- Importar el header desde header.html -->
+  <div id="header-container"></div>
+  <script>
+  $(document).ready(function(){
+    // Cargar el contenido del archivo header.html en el contenedor #header-container
+    $("#header-container").load("/header.html");
+  });
+  </script>
+  
+  <main> <!-- MAIN CONTENT -->
+
+  <div class="container">
+
+    <div class="article">
+
+      <h1>TETRIS celebra sus 40 años: Un mercado por explorar en Panamá</h1>
+        <img class="mainimg" src="/assets/tetrisportada.jpg" alt="mainimg">
+
+        <div class="maintext">
+        
+          <h5><a id="authorname" href="/personal/kevinzhu.html">Por Kevin Zhu</a></h5>
+        
+          <div class="articlelist1">
+            <p><a class="artdate" href="#"></a>Junio 11, 2024<a href="#"></a></p>
+
+              <ul>
+                <li class="listicon"><a href="https://www.instagram.com/kejozhla3/">
+                  <i class="fa-brands fa-instagram" alt="instagram"></i>
+                </a></li>
+
+              </ul>
+          </div>
+
+          <!-- MAIN ARTICLE TEXT-->
+
+            <div>
+              <p>
+                    Ciudad de Panamá, Panamá. — Tetra (étimo griego que significa ¨cuatro¨) conformado por siete formas, así consiste el juego Tetris que cumplió su cuadragésima aniversaria el pasado 6 de junio, luego de que fuera publicara en 1984 por Alekséi Leonídovich Pázhitnov, un ingeniero informático y desarrollador de videojuego de la extinta Unión de Repúblicas Socialistas Soviéticas (URSS).
+              </p>
+              <p>
+                Blue Planet Software es el actual propietario intelectual de Tetris, fundada por Henk Rogers en Hawái en 1996. De acuerdo con la página web de la compañía, ¨nuestra empresa fue elegida para gestionar los derechos exclusivos de licencia comercial de Tetris¨, agregó que <a href="https://web.archive.org/web/20090503141401/http://main.blueplanetsoftware.com/about_us.html">¨una vez que la propiedad está bajo nuestro cuidado, le damos un meticuloso cambio de imagen antes de presentarla a nuestros clientes, entre los que se encuentran algunos de los editores de juegos de ordenador más grandes del mundo¨.</a>
+              </p>
+              <p>
+                Cada año, se celebra el Classic Tetris Worid Championship (CTWC), el campeonato empezó en 2010. El evento tiene una duración de dos días, donde el primer día empiezan con las rondas de clasificación y el segundo, el evento principal. Hasta la fecha, el jugador con más títulos de campeón es Jonas Neubayer, y el actual campeón que se coronó el pasado 9 de junio es <a href="https://www.instagram.com/p/C8Dcj_WyhYO/?img_index=1">Alex Thach. El torneo de este año se celebró en Pasadena, California.</a>
+              </p>
+              <p>
+                En Panamá no existe la presencia de Tetris a nivel competitivo, para poder participar en CTWC, se necesita viajar a Estados Unidos para empezar a clasificar. 
+              </p>
+              <p>
+                De acuerdo con una <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-2-174">investigación del Dr. Richard Hajer</a>, psicólogo de la Universidad de California en Estados Unidos (EE.UU.), "Los cambios en la Topografía Computarizada (TC) después de la práctica condujeron a una corteza significativamente más gruesa en el grupo experimental en comparación con el grupo de control", eso quiere decir más eficacia en la actividad cerebral, las cuales se encontró cambios estructurales en partes del cerebro "asociadas con el movimiento, a pensamiento crítico, el razonamiento, el lenguaje y el procesamiento".
+              </p>
+              <p>
+                En 2020, cuatro casas productoras anunciaron una película titulada Tetris", dirigido por Jon S.Baird, donde se enfocan en cine biográfico. El actor ruso Nikita Mijáilovich Yefrémoy interpreta el personaje Alekséi Pázhitnov, al finalmente, "Tetris¨ tuvo su estreno mundial en el <a href="https://schedule.sxsw.com/2023/films/2081828">Festival de Cine SXSW en marzo de 2023</a>.
+              </p>
+      </div>
+    </div>
+  </div>
+
+      <p class="lastp">
+        Una versión de este artículo aparece impresa el xx/xx/xx, Sección X,
+        Página X de la edición de Panama Times con el titular: TETRIS celebra sus 40 años: Un mercado por explorar en Panamá
+        <a href="#">Periódico de Hoy</a> | <a href="#">Subscribe</a>
+      </p>
+
+  </main>
+
+<!-- FOOTER IMPORT -->
+<footer>
+    <div id="footer"></div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+        $("#footer").load("/footer.html"); 
+    });
+  </script>
+
+</body>
+</html>
